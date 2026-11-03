@@ -1,0 +1,25 @@
+{
+  "name": "dieta",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "workspaces": [
+    "client"
+  ],
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "dev": "concurrently -n api,web -c gray,green \"yarn dev:api\" \"yarn workspace client dev\"",
+    "dev:api": "node --disable-warning=ExperimentalWarning --watch server/src/index.ts",
+    "build": "yarn workspace client build",
+    "start": "node --disable-warning=ExperimentalWarning server/src/index.ts",
+    "test": "node --disable-warning=ExperimentalWarning --test \"server/test/*.test.ts\" \"client/src/lib/*.test.ts\"",
+    "typecheck": "tsc -p server/tsconfig.json && yarn workspace client typecheck"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "concurrently": "^9.0.0",
+    "typescript": "^5.8.0"
+  }
+}
