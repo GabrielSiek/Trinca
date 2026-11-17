@@ -1,6 +1,6 @@
 # Cutting
 
-Diet and training tracker for a 50-day cut (31/10 to 19/12/2026). The server runs on a laptop at home; the app opens in a browser on the same Wi-Fi, on a computer or phone. The interface is in Portuguese.
+Diet and training tracker. The server runs on a homeserver; the app opens in a browser on the same Wi-Fi, on a computer or phone. The interface is in Portuguese.
 
 - **Client:** React, TypeScript, styled-components, Vite
 - **Server:** plain Node with its built-in HTTP server and SQLite. It has no runtime dependencies and uses about 70 MB of RAM.
