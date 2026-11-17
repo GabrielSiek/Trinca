@@ -1,4 +1,4 @@
-# Cutting
+# Trinca
 
 Diet and training tracker. The server runs on a homeserver; the app opens in a browser on the same Wi-Fi, on a computer or phone. The interface is in Portuguese.
 
